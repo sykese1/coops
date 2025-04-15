@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cooperative Order Intake Form - Projectized Solutions LLC</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 700px;
+            margin: 40px auto;
+            background-color: #fff;
+            padding: 20px 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            margin-top: 20px;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>Cooperative Order Intake Form</h2>
+    <form action="https://formsubmit.co/psllcinfo@projectizedsolutions.com" method="POST" enctype="multipart/form-data">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://projectizedsolutions.com/thank-you.html">
+
+        <label for="organization">Organization Name</label>
+        <input type="text" id="organization" name="Organization Name" required>
+
+        <label for="contact">Contact Name</label>
+        <input type="text" id="contact" name="Contact Name" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="Email Address" required>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="Phone Number">
+
+        <label for="cooperative">Cooperative Contract</label>
+        <select id="cooperative" name="Cooperative Contract" required>
+            <option value="">Select</option>
+            <option value="Sourcewell">Sourcewell</option>
+            <option value="OMNIA Partners">OMNIA Partners</option>
+            <option value="GSA MAS">GSA MAS</option>
+            <option value="TX DIR">TX DIR</option>
+            <option value="NCPA">NCPA</option>
+            <option value="PEPPM">PEPPM</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <label for="po">Upload Purchase Order / Quote</label>
+        <input type="file" id="po" name="Upload PO or Quote">
+
+        <label for="items">Item(s) Ordered Description</label>
+        <textarea id="items" name="Items Ordered Description" rows="4" required></textarea>
+
+        <label for="address">Shipping Address</label>
+        <textarea id="address" name="Shipping Address" rows="2" required></textarea>
+
+        <label for="delivery">Requested Delivery Date</label>
+        <input type="date" id="delivery" name="Requested Delivery Date">
+
+        <label for="notes">Additional Notes / Special Instructions</label>
+        <textarea id="notes" name="Additional Notes" rows="3"></textarea>
+
+        <label>
+            <input type="checkbox" name="Compliance Confirmation" required> I confirm this order complies with cooperative purchasing requirements.
+        </label>
+
+        <button type="submit">Submit Order</button>
+    </form>
+</div>
+</body>
+</html>
